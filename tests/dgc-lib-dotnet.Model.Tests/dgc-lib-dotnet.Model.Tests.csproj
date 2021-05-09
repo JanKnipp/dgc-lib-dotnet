@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>dgc-lib-dotnet.Models.Tests</RootNamespace>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Ressources\examples\contrived-translit.json" />
+    <None Remove="Ressources\examples\rec.json" />
+    <None Remove="Ressources\examples\test-naa.json" />
+    <None Remove="Ressources\examples\test-rat.json" />
+    <None Remove="Ressources\examples\vac.json" />
+    <None Remove="Ressources\test\invalid\empty.json" />
+    <None Remove="Ressources\test\invalid\invalid_dob.json" />
+    <None Remove="Ressources\test\invalid\invalid_vac.json" />
+    <None Remove="Ressources\test\invalid\missing_dob.json" />
+    <None Remove="Ressources\test\invalid\missing_fnt.json" />
+    <None Remove="Ressources\valuesets\disease-agent-targeted.json" />
+    <None Remove="Ressources\valuesets\test-manf.json" />
+    <None Remove="Ressources\valuesets\test-result.json" />
+    <None Remove="Ressources\valuesets\vaccine-mah-manf.json" />
+    <None Remove="Ressources\valuesets\vaccine-medicinal-product.json" />
+    <None Remove="Ressources\valuesets\vaccine-prophylaxis.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Ressources\examples\contrived-translit.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\examples\rec.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\examples\test-naa.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\examples\test-rat.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\examples\vac.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\test\invalid\empty.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\test\invalid\invalid_dob.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\test\invalid\invalid_vac.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\test\invalid\missing_dob.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\test\invalid\missing_fnt.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\disease-agent-targeted.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\test-manf.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\test-result.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\vaccine-mah-manf.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\vaccine-medicinal-product.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\vaccine-prophylaxis.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="1.3.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\dgc-lib-dotnet.Model\dgc-lib-dotnet.Model.csproj" />
+    <ProjectReference Include="..\..\src\dgc-lib-dotnet.Parser\dgc-lib-dotnet.Parser.csproj" />
+  </ItemGroup>
+
+  
+</Project>
