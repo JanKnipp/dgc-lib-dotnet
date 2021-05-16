@@ -12,6 +12,7 @@ namespace dgc_lib_net.Tests
         [Theory]
         [InlineData(@".\Ressources\valuesets\disease-agent-targeted.json")]
         [InlineData(@".\Ressources\valuesets\test-manf.json")]
+        [InlineData(@".\Ressources\valuesets\test-type.json")]
         [InlineData(@".\Ressources\valuesets\test-result.json")]
         [InlineData(@".\Ressources\valuesets\vaccine-mah-manf.json")]
         [InlineData(@".\Ressources\valuesets\vaccine-medicinal-product.json")]

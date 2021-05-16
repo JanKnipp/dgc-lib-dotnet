@@ -26,7 +26,8 @@ namespace dgc_lib_dotnet.Model
         /// </summary>
         [JsonProperty("tt", Required = Required.Always)]
         [Required]
-        public string TestType { get; set; }
+        [JsonConverter(typeof(ValueSetConverter))]
+        public KeyValuePair<string, ValueSetValues> TestType { get; set; }
 
         /// <summary>
         /// NAA Test Name

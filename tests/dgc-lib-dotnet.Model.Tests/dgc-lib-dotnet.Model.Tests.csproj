@@ -21,6 +21,7 @@
     <None Remove="Ressources\valuesets\disease-agent-targeted.json" />
     <None Remove="Ressources\valuesets\test-manf.json" />
     <None Remove="Ressources\valuesets\test-result.json" />
+    <None Remove="Ressources\valuesets\test-type.json" />
     <None Remove="Ressources\valuesets\vaccine-mah-manf.json" />
     <None Remove="Ressources\valuesets\vaccine-medicinal-product.json" />
     <None Remove="Ressources\valuesets\vaccine-prophylaxis.json" />
@@ -64,6 +65,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Ressources\valuesets\test-result.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\valuesets\test-type.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Ressources\valuesets\vaccine-mah-manf.json">

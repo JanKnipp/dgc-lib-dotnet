@@ -21,6 +21,7 @@ namespace dgc_lib_dotnet.Models
             {
                 @".\Ressources\valuesets\disease-agent-targeted.json",
                 @".\Ressources\valuesets\test-manf.json",
+                @".\Ressources\valuesets\test-type.json",
                 @".\Ressources\valuesets\test-result.json",
                 @".\Ressources\valuesets\vaccine-mah-manf.json",
                 @".\Ressources\valuesets\vaccine-medicinal-product.json",
