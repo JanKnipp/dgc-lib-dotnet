@@ -6,6 +6,6 @@ namespace dgc_lib_dotnet.Model.Attributes
     public class AgeRangeAttribute : RangeAttribute
     {
         public AgeRangeAttribute()
-            : base(typeof(DateTime), DateTime.Today.AddYears(-120).ToShortDateString(), DateTime.Today.ToShortDateString()) { }
+            : base(typeof(DateTime), new DateTime(1900,1,1).ToShortDateString(), DateTime.Today.ToShortDateString()) { }
     }
 }

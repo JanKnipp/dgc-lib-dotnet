@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -8,6 +8,811 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <!-- TEST DATA FILES BEGIN -->
+    <None Remove="Ressources\dgc-testdata\AT\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\AT\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\AT\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\AT\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\BE\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\BE\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\BE\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\BG\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\CBO1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\CBO2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\CO1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\CO2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\CO28_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\CO3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\DGC2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\DGC3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\DGC4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\DGC5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\common\2DCode\raw\DGC6_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CY\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CY\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CY\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CY\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CZ\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CZ\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CZ\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CZ\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\CZ\2DCode\raw\5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DE\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DE\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DE\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\7_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\DK\2DCode\raw\8_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1001_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1002_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1003_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1101_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1102_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1103_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1201_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1202_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1203_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1501_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1502_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\1503_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\2001_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\2002_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\201_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\202_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\203_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\501_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\502_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\ES\2DCode\raw\503_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\FR\2DCode\raw\recovery_ok_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\FR\2DCode\raw\test_pcr_ok_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\FR\2DCode\raw\vaccin_ok_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\GR\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\GR\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\HR\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\HR\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\HR\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\HR\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IS\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IS\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IS\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IS\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IT\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IT\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IT\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\IT\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\LU\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\LV\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\LV\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\LV\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\0_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\10_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\100_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\101_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\102_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\103_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\104_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\105_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\106_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\107_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\108_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\109_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\11_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\110_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\111_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\112_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\113_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\114_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\115_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\116_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\117_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\118_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\119_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\12_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\120_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\121_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\122_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\123_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\124_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\125_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\126_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\127_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\128_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\129_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\13_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\130_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\131_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\132_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\133_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\134_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\135_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\136_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\137_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\138_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\139_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\14_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\140_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\141_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\142_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\143_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\144_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\145_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\146_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\147_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\148_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\149_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\15_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\150_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\151_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\152_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\153_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\154_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\155_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\156_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\157_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\158_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\159_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\16_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\160_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\161_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\162_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\163_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\164_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\165_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\166_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\167_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\168_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\169_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\17_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\170_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\171_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\172_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\173_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\174_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\175_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\176_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\177_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\178_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\179_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\18_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\180_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\181_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\182_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\183_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\184_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\185_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\186_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\187_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\188_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\189_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\19_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\190_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\191_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\192_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\193_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\194_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\195_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\196_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\197_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\198_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\199_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\20_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\200_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\201_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\202_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\203_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\204_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\205_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\206_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\207_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\208_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\209_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\21_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\210_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\211_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\212_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\213_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\214_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\215_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\216_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\217_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\218_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\219_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\22_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\220_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\221_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\222_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\223_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\224_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\225_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\226_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\227_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\228_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\229_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\23_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\230_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\231_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\232_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\233_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\234_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\235_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\236_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\237_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\238_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\239_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\24_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\240_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\241_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\242_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\243_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\244_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\245_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\246_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\247_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\248_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\249_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\25_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\250_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\251_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\252_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\253_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\254_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\255_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\256_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\257_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\258_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\259_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\26_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\260_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\261_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\262_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\263_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\264_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\265_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\266_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\267_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\268_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\269_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\27_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\270_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\271_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\272_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\273_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\274_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\275_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\276_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\277_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\278_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\279_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\28_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\280_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\281_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\282_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\283_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\284_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\285_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\286_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\287_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\288_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\289_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\29_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\290_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\291_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\292_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\293_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\294_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\295_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\296_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\297_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\298_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\299_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\30_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\300_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\301_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\302_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\303_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\304_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\305_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\306_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\307_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\308_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\309_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\31_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\310_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\311_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\312_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\313_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\314_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\315_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\316_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\317_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\318_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\319_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\32_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\320_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\321_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\322_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\323_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\324_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\325_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\326_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\327_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\328_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\329_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\33_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\330_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\331_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\332_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\333_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\334_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\335_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\336_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\337_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\338_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\339_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\34_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\340_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\341_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\342_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\343_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\344_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\345_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\346_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\347_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\348_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\349_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\35_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\350_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\351_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\352_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\353_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\354_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\355_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\356_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\357_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\358_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\359_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\36_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\360_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\361_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\362_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\363_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\364_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\365_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\366_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\367_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\368_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\369_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\37_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\370_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\371_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\372_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\373_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\374_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\375_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\376_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\377_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\378_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\379_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\38_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\380_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\381_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\382_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\383_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\384_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\385_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\386_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\387_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\388_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\389_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\39_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\390_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\391_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\392_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\393_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\394_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\395_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\396_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\397_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\398_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\399_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\40_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\400_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\401_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\402_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\403_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\404_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\405_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\406_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\407_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\408_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\409_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\41_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\410_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\411_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\412_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\413_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\414_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\415_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\416_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\417_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\418_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\419_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\42_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\420_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\421_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\422_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\423_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\424_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\425_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\426_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\427_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\428_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\429_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\43_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\430_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\431_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\432_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\433_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\434_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\435_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\436_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\437_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\438_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\439_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\44_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\440_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\441_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\442_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\443_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\444_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\445_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\446_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\447_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\448_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\449_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\45_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\450_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\451_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\452_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\453_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\454_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\455_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\456_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\457_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\458_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\459_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\46_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\460_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\461_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\462_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\463_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\464_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\465_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\466_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\467_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\468_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\469_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\47_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\470_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\471_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\472_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\473_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\474_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\475_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\476_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\477_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\478_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\479_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\48_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\480_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\481_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\482_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\483_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\484_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\485_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\486_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\487_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\488_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\489_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\49_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\490_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\491_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\492_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\493_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\494_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\495_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\496_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\497_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\498_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\499_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\50_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\500_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\501_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\502_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\503_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\504_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\505_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\506_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\507_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\508_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\509_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\51_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\510_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\511_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\512_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\513_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\514_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\515_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\516_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\517_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\518_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\519_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\52_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\520_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\521_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\522_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\523_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\524_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\525_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\526_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\527_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\528_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\529_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\53_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\530_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\531_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\532_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\533_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\534_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\535_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\536_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\537_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\538_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\539_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\54_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\540_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\541_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\542_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\543_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\544_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\545_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\546_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\547_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\548_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\549_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\55_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\550_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\551_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\552_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\553_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\554_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\555_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\556_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\557_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\558_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\559_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\56_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\560_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\561_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\562_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\563_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\564_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\565_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\566_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\567_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\568_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\569_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\57_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\570_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\571_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\572_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\573_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\574_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\575_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\576_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\577_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\578_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\579_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\58_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\580_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\581_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\582_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\583_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\584_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\585_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\586_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\587_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\588_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\589_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\59_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\590_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\591_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\592_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\593_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\594_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\595_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\596_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\597_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\598_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\599_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\6_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\60_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\600_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\601_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\602_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\603_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\604_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\605_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\606_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\607_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\608_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\609_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\61_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\610_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\611_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\612_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\613_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\614_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\615_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\616_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\617_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\618_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\619_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\62_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\620_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\621_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\622_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\623_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\624_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\625_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\626_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\627_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\628_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\629_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\63_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\630_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\631_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\632_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\633_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\634_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\635_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\636_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\637_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\638_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\639_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\64_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\640_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\641_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\642_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\643_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\644_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\645_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\646_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\647_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\648_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\649_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\65_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\650_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\651_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\652_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\653_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\654_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\655_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\656_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\657_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\658_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\659_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\66_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\660_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\661_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\662_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\663_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\664_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\665_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\666_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\667_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\668_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\669_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\67_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\670_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\671_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\672_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\673_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\674_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\675_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\676_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\677_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\678_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\679_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\68_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\680_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\681_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\682_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\683_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\684_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\685_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\686_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\687_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\688_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\689_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\69_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\690_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\691_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\692_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\693_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\694_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\695_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\696_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\697_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\698_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\7_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\70_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\71_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\72_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\73_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\74_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\75_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\76_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\77_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\78_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\79_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\8_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\80_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\81_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\82_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\83_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\84_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\85_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\86_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\87_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\88_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\89_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\9_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\90_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\91_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\92_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\93_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\94_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\95_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\96_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\97_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\98_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\NL\2DCode\raw\99_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PL\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PL\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PL\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PL\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PL\2DCode\raw\5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PT\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PT\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PT\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\PT\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\RO\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\RO\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\RO\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\RO\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SE\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SE\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SE\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SE\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SE\2DCode\raw\5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SE\2DCode\raw\6_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SI\2DCode\raw\1_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SI\2DCode\raw\2_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SI\2DCode\raw\3_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SI\2DCode\raw\4_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SI\2DCode\raw\5_dgc.json" />
+    <None Remove="Ressources\dgc-testdata\SI\2DCode\raw\6_dgc.json" />
+    <!-- TEST DATA FILES END -->
     <None Remove="Ressources\examples\contrived-translit.json" />
     <None Remove="Ressources\examples\rec.json" />
     <None Remove="Ressources\examples\test-naa.json" />
@@ -28,6 +833,2417 @@
   </ItemGroup>
 
   <ItemGroup>
+    <!-- TEST DATA FILES BEGIN -->
+    <Content Include="Ressources\dgc-testdata\AT\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\AT\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\AT\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\AT\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\BE\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\BE\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\BE\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\BG\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\CBO1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\CBO2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\CO1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\CO2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\CO28_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\CO3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\DGC2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\DGC3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\DGC4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\DGC5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\common\2DCode\raw\DGC6_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CY\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CY\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CY\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CY\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CZ\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CZ\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CZ\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CZ\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\CZ\2DCode\raw\5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DE\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DE\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DE\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\7_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\DK\2DCode\raw\8_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1001_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1002_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1003_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1101_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1102_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1103_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1201_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1202_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1203_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1501_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1502_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\1503_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\2001_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\2002_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\201_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\202_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\203_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\501_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\502_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\ES\2DCode\raw\503_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\FR\2DCode\raw\recovery_ok_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\FR\2DCode\raw\test_pcr_ok_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\FR\2DCode\raw\vaccin_ok_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\GR\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\GR\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\HR\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\HR\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\HR\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\HR\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IS\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IS\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IS\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IS\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IT\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IT\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IT\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\IT\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\LU\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\LV\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\LV\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\LV\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\0_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\10_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\100_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\101_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\102_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\103_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\104_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\105_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\106_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\107_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\108_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\109_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\11_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\110_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\111_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\112_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\113_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\114_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\115_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\116_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\117_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\118_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\119_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\12_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\120_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\121_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\122_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\123_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\124_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\125_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\126_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\127_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\128_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\129_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\13_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\130_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\131_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\132_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\133_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\134_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\135_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\136_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\137_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\138_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\139_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\14_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\140_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\141_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\142_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\143_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\144_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\145_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\146_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\147_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\148_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\149_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\15_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\150_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\151_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\152_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\153_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\154_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\155_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\156_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\157_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\158_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\159_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\16_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\160_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\161_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\162_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\163_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\164_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\165_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\166_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\167_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\168_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\169_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\17_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\170_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\171_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\172_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\173_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\174_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\175_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\176_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\177_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\178_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\179_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\18_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\180_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\181_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\182_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\183_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\184_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\185_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\186_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\187_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\188_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\189_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\19_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\190_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\191_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\192_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\193_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\194_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\195_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\196_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\197_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\198_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\199_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\20_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\200_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\201_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\202_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\203_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\204_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\205_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\206_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\207_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\208_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\209_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\21_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\210_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\211_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\212_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\213_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\214_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\215_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\216_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\217_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\218_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\219_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\22_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\220_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\221_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\222_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\223_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\224_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\225_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\226_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\227_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\228_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\229_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\23_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\230_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\231_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\232_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\233_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\234_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\235_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\236_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\237_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\238_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\239_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\24_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\240_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\241_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\242_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\243_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\244_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\245_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\246_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\247_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\248_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\249_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\25_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\250_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\251_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\252_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\253_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\254_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\255_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\256_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\257_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\258_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\259_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\26_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\260_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\261_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\262_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\263_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\264_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\265_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\266_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\267_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\268_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\269_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\27_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\270_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\271_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\272_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\273_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\274_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\275_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\276_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\277_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\278_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\279_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\28_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\280_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\281_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\282_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\283_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\284_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\285_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\286_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\287_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\288_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\289_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\29_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\290_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\291_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\292_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\293_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\294_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\295_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\296_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\297_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\298_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\299_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\30_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\300_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\301_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\302_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\303_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\304_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\305_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\306_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\307_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\308_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\309_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\31_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\310_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\311_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\312_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\313_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\314_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\315_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\316_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\317_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\318_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\319_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\32_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\320_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\321_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\322_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\323_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\324_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\325_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\326_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\327_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\328_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\329_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\33_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\330_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\331_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\332_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\333_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\334_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\335_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\336_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\337_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\338_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\339_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\34_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\340_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\341_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\342_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\343_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\344_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\345_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\346_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\347_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\348_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\349_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\35_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\350_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\351_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\352_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\353_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\354_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\355_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\356_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\357_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\358_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\359_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\36_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\360_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\361_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\362_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\363_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\364_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\365_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\366_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\367_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\368_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\369_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\37_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\370_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\371_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\372_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\373_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\374_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\375_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\376_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\377_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\378_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\379_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\38_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\380_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\381_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\382_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\383_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\384_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\385_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\386_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\387_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\388_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\389_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\39_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\390_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\391_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\392_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\393_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\394_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\395_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\396_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\397_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\398_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\399_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\40_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\400_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\401_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\402_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\403_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\404_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\405_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\406_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\407_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\408_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\409_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\41_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\410_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\411_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\412_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\413_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\414_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\415_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\416_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\417_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\418_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\419_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\42_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\420_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\421_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\422_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\423_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\424_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\425_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\426_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\427_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\428_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\429_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\43_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\430_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\431_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\432_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\433_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\434_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\435_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\436_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\437_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\438_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\439_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\44_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\440_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\441_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\442_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\443_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\444_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\445_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\446_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\447_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\448_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\449_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\45_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\450_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\451_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\452_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\453_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\454_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\455_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\456_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\457_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\458_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\459_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\46_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\460_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\461_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\462_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\463_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\464_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\465_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\466_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\467_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\468_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\469_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\47_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\470_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\471_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\472_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\473_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\474_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\475_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\476_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\477_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\478_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\479_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\48_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\480_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\481_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\482_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\483_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\484_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\485_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\486_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\487_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\488_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\489_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\49_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\490_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\491_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\492_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\493_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\494_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\495_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\496_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\497_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\498_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\499_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\50_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\500_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\501_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\502_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\503_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\504_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\505_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\506_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\507_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\508_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\509_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\51_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\510_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\511_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\512_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\513_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\514_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\515_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\516_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\517_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\518_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\519_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\52_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\520_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\521_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\522_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\523_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\524_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\525_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\526_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\527_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\528_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\529_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\53_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\530_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\531_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\532_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\533_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\534_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\535_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\536_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\537_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\538_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\539_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\54_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\540_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\541_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\542_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\543_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\544_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\545_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\546_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\547_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\548_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\549_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\55_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\550_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\551_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\552_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\553_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\554_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\555_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\556_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\557_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\558_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\559_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\56_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\560_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\561_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\562_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\563_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\564_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\565_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\566_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\567_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\568_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\569_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\57_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\570_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\571_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\572_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\573_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\574_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\575_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\576_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\577_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\578_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\579_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\58_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\580_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\581_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\582_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\583_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\584_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\585_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\586_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\587_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\588_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\589_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\59_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\590_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\591_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\592_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\593_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\594_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\595_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\596_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\597_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\598_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\599_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\6_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\60_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\600_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\601_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\602_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\603_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\604_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\605_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\606_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\607_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\608_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\609_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\61_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\610_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\611_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\612_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\613_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\614_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\615_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\616_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\617_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\618_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\619_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\62_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\620_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\621_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\622_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\623_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\624_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\625_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\626_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\627_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\628_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\629_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\63_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\630_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\631_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\632_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\633_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\634_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\635_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\636_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\637_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\638_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\639_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\64_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\640_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\641_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\642_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\643_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\644_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\645_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\646_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\647_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\648_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\649_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\65_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\650_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\651_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\652_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\653_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\654_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\655_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\656_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\657_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\658_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\659_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\66_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\660_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\661_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\662_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\663_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\664_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\665_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\666_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\667_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\668_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\669_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\67_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\670_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\671_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\672_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\673_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\674_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\675_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\676_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\677_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\678_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\679_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\68_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\680_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\681_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\682_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\683_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\684_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\685_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\686_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\687_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\688_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\689_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\69_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\690_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\691_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\692_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\693_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\694_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\695_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\696_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\697_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\698_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\7_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\70_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\71_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\72_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\73_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\74_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\75_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\76_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\77_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\78_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\79_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\8_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\80_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\81_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\82_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\83_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\84_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\85_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\86_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\87_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\88_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\89_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\9_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\90_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\91_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\92_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\93_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\94_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\95_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\96_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\97_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\98_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\NL\2DCode\raw\99_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PL\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PL\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PL\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PL\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PL\2DCode\raw\5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PT\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PT\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PT\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\PT\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\RO\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\RO\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\RO\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\RO\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SE\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SE\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SE\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SE\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SE\2DCode\raw\5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SE\2DCode\raw\6_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SI\2DCode\raw\1_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SI\2DCode\raw\2_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SI\2DCode\raw\3_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SI\2DCode\raw\4_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SI\2DCode\raw\5_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Ressources\dgc-testdata\SI\2DCode\raw\6_dgc.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <!-- TEST DATA FILES END -->
     <Content Include="Ressources\examples\contrived-translit.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -82,6 +3298,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="JsonDiffPatch.Net" Version="2.3.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.7.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="xunit" Version="2.4.1" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using dgc_lib_dotnet.Model;
 using Newtonsoft.Json;
 
@@ -19,7 +20,13 @@ namespace dgc_lib_dotnet.Parser
                 throw new ArgumentNullException(nameof(json));
             }
 
-            return JsonConvert.DeserializeObject<DigitalGreenCertificate>(json);
+            var dgc = JsonConvert.DeserializeObject<DigitalGreenCertificate>(json);
+
+            var ctc = new ValidationContext(dgc);
+
+            Validator.ValidateObject(dgc, ctc, true);
+
+            return dgc;
         }
 
         public static string SerializeJson(DigitalGreenCertificate digitalGreenCertificate)

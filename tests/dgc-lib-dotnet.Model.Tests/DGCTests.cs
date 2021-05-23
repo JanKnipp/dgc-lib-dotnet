@@ -1,15 +1,25 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.IO;
 using dgc_lib_dotnet.Models;
 using dgc_lib_dotnet.Parser;
+using JsonDiffPatchDotNet;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Xunit;
+using Xunit.Abstractions;
 
 namespace dgc_lib_net.Tests
 {
     public class DGCTests
     {
+        private readonly ITestOutputHelper _output;
+
+        public DGCTests(ITestOutputHelper output)
+        {
+            _output = output;
+        }
+
         [Theory]
         [InlineData(@".\Ressources\examples\test-rat.json")]
         [InlineData(@".\Ressources\examples\test-naa.json")]
@@ -35,13 +45,35 @@ namespace dgc_lib_net.Tests
 
             var jsonComparision = DeepCompareJson(jsonReadFromFile, jsonSerialized);
 
+            var jsonDifference = ShowDiff(jsonReadFromFile, jsonSerialized);
+
+            if (jsonDifference != null)
+            {
+                _output.WriteLine(jsonDifference.ToString());
+            }
+
+            Assert.True(jsonComparision);
+            Assert.Null(jsonDifference);
+
             Assert.True(jsonComparision);
         }
-
 
         private bool DeepCompareJson(string jsonReference, string jsonCompare)
         {
             return JToken.DeepEquals(JToken.Parse(jsonReference), JToken.Parse(jsonCompare));
+        }
+
+        private JToken ShowDiff(string jsonReference, string jsonCompare)
+        {
+            var jdp = new JsonDiffPatch(new Options()
+            {
+                ArrayDiff = ArrayDiffMode.Efficient,
+                DiffBehaviors = DiffBehavior.None,
+                TextDiff = TextDiffMode.Efficient
+            });
+
+            return jdp.Diff(JToken.Parse(jsonReference), JToken.Parse(jsonCompare));
+
         }
 
         [Theory]
@@ -61,13 +93,13 @@ namespace dgc_lib_net.Tests
 
                 var jsonReadFromFile = File.ReadAllText(filePath);
 
-                DigitalGreenCertificateParser.DeserializeJson(jsonReadFromFile);
+                var dgc = DigitalGreenCertificateParser.DeserializeJson(jsonReadFromFile);
             };
 
             var exception = Record.Exception(deserialize);
 
             Assert.NotNull(exception);
-            Assert.IsType<JsonSerializationException>(exception);
+            Assert.True( exception.GetType() == typeof(ValidationException) || exception.GetType() == typeof(JsonSerializationException));
         }
     }
 }

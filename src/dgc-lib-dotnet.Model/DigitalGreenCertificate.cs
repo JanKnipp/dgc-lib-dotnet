@@ -17,7 +17,7 @@ namespace dgc_lib_dotnet.Model
         /// </summary>
         [JsonProperty("ver", Required = Required.Always)]
         [Required]
-        [RegularExpression("^\\d+.\\d+.\\d+$")]
+        [RegularExpression(@"^\d+.\d+.\d+$")]
         public Version SchemaVersion { get; set; }
 
         /// <summary>
@@ -31,7 +31,6 @@ namespace dgc_lib_dotnet.Model
         /// Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099
         /// </summary>
         [JsonProperty("dob", Required = Required.Always)]
-        [RegularExpression("(19|20)\\d{2}-\\d{2}-\\d{2}")]
         [AgeRange]
         [JsonConverter(typeof(DateFormatConverter), "yyyy-MM-dd")]
         [Required]
@@ -41,18 +40,21 @@ namespace dgc_lib_dotnet.Model
         /// Vaccination Group
         /// </summary>
         [JsonProperty("v", Required = Required.DisallowNull)]
+        [CollectionCount(1, int.MaxValue)]
         public IEnumerable<VaccinationEntry> VaccinationGroup { get; set; }
 
         /// <summary>
         /// Test Group
         /// </summary>
         [JsonProperty("t", Required = Required.DisallowNull)]
+        [CollectionCount(1, int.MaxValue)]
         public IEnumerable<TestEntry> TestGroup { get; set; }
 
         /// <summary>
         /// Recovery Group
         /// </summary>
         [JsonProperty("r", Required = Required.DisallowNull)]
+        [CollectionCount(1, int.MaxValue)]
         public IEnumerable<RecoveryEntry> RecoveryGroup { get; set; }
     }
 }
