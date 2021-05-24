@@ -29,6 +29,7 @@ namespace dgc_lib_dotnet.Model
 
         /// <summary>
         /// Date of Birth of the person addressed in the DGC. ISO 8601 date format restricted to range 1900-2099
+        /// Complete date, without time, following the ISO 8601.
         /// </summary>
         [JsonProperty("dob", Required = Required.Always)]
         [AgeRange]

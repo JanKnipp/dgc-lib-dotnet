@@ -1,9 +1,11 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.ComponentModel.DataAnnotations;
 
 namespace dgc_lib_dotnet.Model.Attributes
 {
-    public class CollectionCountAttribute : ValidationAttribute
+    [AttributeUsage(AttributeTargets.Property, AllowMultiple = true)]
+    public sealed class CollectionCountAttribute : ValidationAttribute
     {
         private readonly int _minCount;
         private readonly int _maxCount;

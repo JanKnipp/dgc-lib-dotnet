@@ -33,6 +33,7 @@ namespace dgc_lib_dotnet.Model
         /// </summary>
         [JsonProperty("co", Required = Required.Always)]
         [Required]
+        [RegularExpression("[A-Z]{1,10}")]
         [JsonConverter(typeof(RegionInfoConverter))]
         public RegionInfo TestCountry { get; set; }
 

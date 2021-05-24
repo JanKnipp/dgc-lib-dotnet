@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using dgc_lib_dotnet.Model;
+using dgc_lib_dotnet.Parser.Exceptions;
 using Newtonsoft.Json;
 
 namespace dgc_lib_dotnet.Parser
@@ -20,11 +21,19 @@ namespace dgc_lib_dotnet.Parser
                 throw new ArgumentNullException(nameof(json));
             }
 
-            var dgc = JsonConvert.DeserializeObject<DigitalGreenCertificate>(json);
+            DigitalGreenCertificate dgc;
+            try
+            {
+                dgc = JsonConvert.DeserializeObject<DigitalGreenCertificate>(json);
 
-            var ctc = new ValidationContext(dgc);
+                var ctc = new ValidationContext(dgc);
 
-            Validator.ValidateObject(dgc, ctc, true);
+                Validator.ValidateObject(dgc, ctc, true);
+            }
+            catch (Exception e)
+            {
+                throw new DigitalGreenCertificateParserDeserializationException($"Error deserializing json to DigitalGreenCertificate: {e.Message}", e);
+            }
 
             return dgc;
         }
@@ -36,8 +45,18 @@ namespace dgc_lib_dotnet.Parser
                 throw new ArgumentNullException(nameof(digitalGreenCertificate));
             }
 
-            return JsonConvert.SerializeObject(digitalGreenCertificate, Formatting.Indented,
-                new JsonSerializerSettings() {NullValueHandling = NullValueHandling.Ignore});
+            string json;
+            try
+            {
+                json = JsonConvert.SerializeObject(digitalGreenCertificate, Formatting.Indented,
+                    new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore });
+            }
+            catch (Exception e)
+            {
+                throw new DigitalGreenCertificateParserSerializationException($"Error serializing json to DigitalGreenCertificate: {e.Message}", e);
+            }
+
+            return json;
         }
     }
 }

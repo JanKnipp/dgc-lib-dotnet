@@ -73,14 +73,14 @@ foreach($fileName in $allFileNamesValid)
 {
     $testFileName = ($fileName).Replace($targetBaseFolder.Parent.Parent.FullName, ".")
     
-    Write-Host "[InlineData(@`"$testFileName`", true)]"
+    Write-Host "[InlineData(@`"$testFileName`")]"
 }
 
 foreach($fileName in $allFileNamesInValid)
 {
     $testFileName = ($fileName).Replace($targetBaseFolder.Parent.Parent.FullName, ".")
     
-    Write-Host "[InlineData(@`"$testFileName`", false)]"
+    Write-Host "[InlineData(@`"$testFileName`")]"
 }
 exit
 

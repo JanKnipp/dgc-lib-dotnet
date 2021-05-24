@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace dgc_lib_dotnet.Models
 {
-    static class ValueSetDataReader
+    public static class ValueSetDataReader
     {
         public static ValueSet GetValueSet(string filename)
         {

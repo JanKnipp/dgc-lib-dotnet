@@ -1,8 +1,8 @@
 using System;
 using System.IO;
 using dgc_lib_dotnet.Model;
+using dgc_lib_dotnet.Models.Tests;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
 using Xunit;
 
 namespace dgc_lib_net.Tests
@@ -32,15 +32,9 @@ namespace dgc_lib_net.Tests
             var jsonSerialized = JsonConvert.SerializeObject(jsonDeserialized, Formatting.Indented,
                 new JsonSerializerSettings() { NullValueHandling = NullValueHandling.Ignore });
 
-            var jsonComparision = DeepCompareJson(jsonReadFromFile, jsonSerialized);
+            var jsonComparision = JsonComparisonHelper.DeepCompareJson(jsonReadFromFile, jsonSerialized);
 
             Assert.True(jsonComparision);
-        }
-
-
-        private bool DeepCompareJson(string jsonReference, string jsonCompare)
-        {
-            return JToken.DeepEquals(JToken.Parse(jsonReference), JToken.Parse(jsonCompare));
         }
     }
 }

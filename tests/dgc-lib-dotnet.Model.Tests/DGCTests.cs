@@ -1,11 +1,9 @@
 using System;
-using System.ComponentModel.DataAnnotations;
 using System.IO;
 using dgc_lib_dotnet.Models;
+using dgc_lib_dotnet.Models.Tests;
 using dgc_lib_dotnet.Parser;
-using JsonDiffPatchDotNet;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
+using dgc_lib_dotnet.Parser.Exceptions;
 using Xunit;
 using Xunit.Abstractions;
 
@@ -43,9 +41,9 @@ namespace dgc_lib_net.Tests
 
             var jsonSerialized = DigitalGreenCertificateParser.SerializeJson(jsonDeserialized);
 
-            var jsonComparision = DeepCompareJson(jsonReadFromFile, jsonSerialized);
+            var jsonComparision = JsonComparisonHelper.DeepCompareJson(jsonReadFromFile, jsonSerialized);
 
-            var jsonDifference = ShowDiff(jsonReadFromFile, jsonSerialized);
+            var jsonDifference = JsonComparisonHelper.ShowDiff(jsonReadFromFile, jsonSerialized);
 
             if (jsonDifference != null)
             {
@@ -54,26 +52,6 @@ namespace dgc_lib_net.Tests
 
             Assert.True(jsonComparision);
             Assert.Null(jsonDifference);
-
-            Assert.True(jsonComparision);
-        }
-
-        private bool DeepCompareJson(string jsonReference, string jsonCompare)
-        {
-            return JToken.DeepEquals(JToken.Parse(jsonReference), JToken.Parse(jsonCompare));
-        }
-
-        private JToken ShowDiff(string jsonReference, string jsonCompare)
-        {
-            var jdp = new JsonDiffPatch(new Options()
-            {
-                ArrayDiff = ArrayDiffMode.Efficient,
-                DiffBehaviors = DiffBehavior.None,
-                TextDiff = TextDiffMode.Efficient
-            });
-
-            return jdp.Diff(JToken.Parse(jsonReference), JToken.Parse(jsonCompare));
-
         }
 
         [Theory]
@@ -84,7 +62,7 @@ namespace dgc_lib_net.Tests
         [InlineData(@".\Ressources\test\invalid\missing_fnt.json")]
         public void Should_Fail_due_to_invalid_or_missing_elements(string filePath)
         {
-            Action deserialize = () =>
+            void Deserialize()
             {
                 if (string.IsNullOrEmpty(filePath))
                 {
@@ -94,12 +72,17 @@ namespace dgc_lib_net.Tests
                 var jsonReadFromFile = File.ReadAllText(filePath);
 
                 var dgc = DigitalGreenCertificateParser.DeserializeJson(jsonReadFromFile);
-            };
+            }
 
-            var exception = Record.Exception(deserialize);
+            var exception = Record.Exception((Action) Deserialize);
+
+            if (exception != null)
+            {
+                _output.WriteLine(exception?.ToString());
+            }
 
             Assert.NotNull(exception);
-            Assert.True( exception.GetType() == typeof(ValidationException) || exception.GetType() == typeof(JsonSerializationException));
+            Assert.True(exception is DigitalGreenCertificateParserDeserializationException);
         }
     }
 }

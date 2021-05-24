@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace dgc_lib_dotnet.Model.JsonConverter
 {
-    class ValueSetConverter:JsonConverter<KeyValuePair<string, ValueSetValues>>
+    public class ValueSetConverter:JsonConverter<KeyValuePair<string, ValueSetValues>>
     {
         public override void WriteJson(JsonWriter writer, KeyValuePair<string, ValueSetValues> value, JsonSerializer serializer)
         {
@@ -15,7 +15,6 @@ namespace dgc_lib_dotnet.Model.JsonConverter
         public override KeyValuePair<string, ValueSetValues> ReadJson(JsonReader reader, Type objectType, KeyValuePair<string, ValueSetValues> existingValue, bool hasExistingValue,
             JsonSerializer serializer)
         {
-
             var valueSets = ValueSetsLoaded.ValueSets;
 
             var value = (string)reader.Value;

@@ -10,6 +10,7 @@ namespace dgc_lib_dotnet.Model
         /// </summary>
         [JsonProperty("fn")]
         [StringLength(50)]
+        [RegularExpression(@"^[^\p{C}]+$")]
         public string FamilyName { get; set; }
 
         /// <summary>
@@ -21,12 +22,12 @@ namespace dgc_lib_dotnet.Model
         [Required]
         public string FamilyNameTransliterated { get; set; }
 
-
         /// <summary>
         /// The given name(s) of the person addressed in the certificate
         /// </summary>
         [JsonProperty("gn")]
         [StringLength(50)]
+        [RegularExpression(@"^[^\p{C}]+$")]
         public string GivenName { get; set; }
 
         /// <summary>

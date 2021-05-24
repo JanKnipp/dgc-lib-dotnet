@@ -71,6 +71,7 @@ namespace dgc_lib_dotnet.Model
         [JsonProperty("co", Required = Required.Always)]
         [Required]
         [JsonConverter(typeof(RegionInfoConverter))]
+        [RegularExpression("[A-Z]{1,10}")]
         public RegionInfo VaccinationCountry { get; set; }
 
         /// <summary>
